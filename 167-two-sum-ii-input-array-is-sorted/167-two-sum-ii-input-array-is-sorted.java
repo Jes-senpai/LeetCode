@@ -11,7 +11,7 @@ class Solution {
             }
             if(sum>target)
                 r--;
-            if(sum<target)
+            else
                 l++;
         }
         return res;
