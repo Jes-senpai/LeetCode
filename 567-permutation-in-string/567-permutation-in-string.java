@@ -2,7 +2,7 @@ class Solution {
     public boolean checkInclusion(String s1, String s2) {
         if(s1.length()>s2.length()) return false;
         int[] arr1 = new int[26];int[] arr2 = new int[26];
-        for(char c:s1.toCharArray()) arr1[c-'a']++;
+        for(int i=0;i<s1.length();i++) arr1[s1.charAt(i)-'a']++;
         for(int i=0;i<s1.length();i++) arr2[s2.charAt(i)-'a']++;
         int l = 0, r = s1.length()-1;
         while(r<s2.length()){
