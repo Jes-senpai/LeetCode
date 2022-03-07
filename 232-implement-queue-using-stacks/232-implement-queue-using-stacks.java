@@ -18,12 +18,9 @@ class MyQueue {
         while(!st2.empty()) st1.push(st2.pop());
         return a;
     }
-    
     public int peek(){
         return top;
     }
-    
-    
     public boolean empty() {
         return st1.empty();
     }
